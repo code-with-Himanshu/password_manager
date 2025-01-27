@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Manager</title>
+  <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- Include CryptoJS library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+</head>
+<body>
+  <!-- Login Page -->
+  <div id="login-page" class="container">
+    <h2>Login</h2>
+    <input type="text" id="login-username" placeholder="Username">
+    <input type="password" id="login-password" placeholder="Password">
+    <button onclick="login()">Login</button>
+    <p id="login-error" style="color: red; display: none;">Invalid username or password</p>
+  </div>
+
+  <!-- Password Manager Page -->
+  <div id="password-manager" class="container" style="display: none;">
+    <h2>Password Manager</h2>
+    <div>
+      <input type="text" id="website" placeholder="Website">
+      <input type="text" id="username" placeholder="Username">
+      <input type="password" id="password" placeholder="Password">
+      <button class="add-btn" onclick="addPassword()">Add</button>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Website</th>
+          <th>Username</th>
+          <th>Password</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="password-list">
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Link to external JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>

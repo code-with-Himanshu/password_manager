@@ -1,0 +1,74 @@
+/* Global Styles */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('bk img.jpg') no-repeat center center/cover;
+
+  }
+  
+  /* Container Styles */
+  .container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 500px;
+    text-align: center;
+  }
+  
+  /* Table Styles */
+  table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  th {
+    background-color: #f4f4f4;
+  }
+  
+  /* Button Styles */
+  button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .add-btn {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .view-btn {
+    background-color: #007BFF;
+    color: white;
+  }
+  
+  .delete-btn {
+    background-color: #FF0000;
+    color: white;
+  }
+  
+  /* Input Styles */
+  input {
+    width: calc(100% - 20px);
+    padding: 5px;
+    margin: 5px 0;
+  }
+  
+  /* Password Toggle */
+  .password-toggle {
+    cursor: pointer;
+  }
+  
